@@ -19,6 +19,8 @@ nav {
     padding: 10px;
     font-size: 20px;
     color: white;
+    height: 65px;
+    background-color: #0073b7;
 }
 
 nav > a {
@@ -35,10 +37,18 @@ nav > a {
 }
 
 .hero h1 {
-    font-size: 28px;
+    font-size: 24px;
+    margin-bottom: 30px;
 }
 
 .hero a {
     color: white;
     text-decoration: underline;
+}
+
+.hero-inner {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
 }

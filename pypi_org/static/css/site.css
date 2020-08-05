@@ -3,6 +3,8 @@ body {
     background: #fff;
     margin: 0px;
     padding: 0px;
+    font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+    font-size: 17px;
 }
 
 .title {
@@ -37,7 +39,7 @@ nav > a {
 }
 
 .hero h1 {
-    font-size: 24px;
+    font-size: 26px;
     margin-bottom: 30px;
 }
 
@@ -51,4 +53,27 @@ nav > a {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+}
+
+.form-control {
+    display: inline-block;
+    border-radius: 2px;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.pypi-stats {
+    padding: 10px 0;
+    background-color: #ececec;
+    text-align: center;
+    border-bottom: 1px solid #d3d3d3;
+    border-top: 1px solid #d3d3d3;
+}
+
+.pypi-stats .stat {
+    display: inline-block;
+    min-width: 170px;
+    padding: 10px;
+    font-size: 16px;
+    color: #003d61;
 }

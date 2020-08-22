@@ -1,10 +1,10 @@
 body {
     color:  #222;
-    background: #fff;
     margin: 0px;
     padding: 0px;
     font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
     font-size: 17px;
+    background-color: #006dad;
 }
 
 .title {
@@ -12,8 +12,10 @@ body {
     }
 
 .main_content {
+    background: #fff;
     padding: 0px;
     margin: 0px;
+    padding-bottom: 50px;
 }
 
 nav {
@@ -111,4 +113,16 @@ nav > a {
     font-size: 16px;
     font-weight: normal;
     font-style: italic;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
 }

@@ -1,9 +1,11 @@
 {% extends "shared/_layout.html" %}
 {% block main_conent %}
     <div class="hero">
-        <h1>Find, install, and publish Python packages with the Python Package Index</h1>
-    <input type="text" placeholder=" Search projects" class="form-control">
-    or <a href="#">browse projects</a>
+        <div class="hero-inner">
+            <h1>Find, install, and publish Python packages with the Python Package Index</h1>
+            <input type="text" placeholder=" Search projects" class="form-control">
+        </div>
+        or <a href="#">browse projects</a>
     </div>
     <div class="pypi-stats">
         <div class="stat">-1 projects</div>
@@ -32,4 +34,5 @@
             <div class="col-md-3"></div>
         </div>
     </div>
+
 {% endblock %}

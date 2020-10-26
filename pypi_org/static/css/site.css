@@ -52,3 +52,18 @@ nav > a {
     margin-right: auto;
     margin-bottom: 30px;
 }
+
+.pypi-stats {
+    padding: 10px 0;
+    background-color: #ececec;
+    text-align: center;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.pypi-stats .stat {
+    display: inline-block;
+    min-width: 170px;
+    padding: 10px;
+    font-size: 16px;
+    color: #003d61;
+}

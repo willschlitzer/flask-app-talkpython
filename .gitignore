@@ -131,3 +131,7 @@ dmypy.json
 .idea/
 test.py
 /class_notes.txt
+/pypi_org/static/img/blue-cube.svg
+/pypi_org/static/img/favicon.png
+/pypi_org/static/img/pypi-logo.svg
+/pypi_org/static/img/white-cube.svg

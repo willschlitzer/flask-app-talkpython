@@ -1,6 +1,9 @@
 import sqlalchemy as sa
 
-class Package:
+from pypi_org.data.modelbase import SqlAlchemyBase
+
+class Package(SqlAlchemyBase):
+    __tablename__ = "packages"
 
     id = sa.Column(sa.String, primary_key=true)
     created_date = sa.Column(sa.DateTime)
@@ -18,3 +21,6 @@ class Package:
 
     # maintainers
     # releases
+
+    def __repr__(self):
+        return "<Package{}>".format(self.id)

@@ -5,7 +5,7 @@ from pypi_org.data.modelbase import SqlAlchemyBase
 class Package(SqlAlchemyBase):
     __tablename__ = "packages"
 
-    id = sa.Column(sa.String, primary_key=true)
+    id = sa.Column(sa.String, primary_key=True)
     created_date = sa.Column(sa.DateTime)
     summary = sa.Column(sa.String)
     description = sa.Column(sa.String)

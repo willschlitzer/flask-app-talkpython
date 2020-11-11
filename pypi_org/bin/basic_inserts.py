@@ -22,6 +22,7 @@ def insert_a_package():
     r.minor_ver = int(input("Minor version: "))
     r.build_ver = int(input("Build version: "))
     r.size = int(input("Size in bytes: "))
+    p.releases.append(r)
 
     print("Release 2")
     r = Release()
@@ -29,6 +30,7 @@ def insert_a_package():
     r.minor_ver = int(input("Minor version: "))
     r.build_ver = int(input("Build version: "))
     r.size = int(input("Size in bytes: "))
+    p.releases.append(r)
 
     import sqlalchemy.orm
     session: sqlalchemy.orm.Session = db_session.factory()

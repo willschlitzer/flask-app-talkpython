@@ -32,12 +32,8 @@ def insert_a_package():
     r.size = int(input("Size in bytes: "))
     p.releases.append(r)
 
-    import sqlalchemy.orm
-    session: sqlalchemy.orm.Session = db_session.factory()
-
+    session = db_session.create_session()
     session.add(p)
-
-
     session.commit()
 
 def init_db():

@@ -2,6 +2,7 @@ import os
 import pypi_org
 import pypi_org.data.db_session as db_session
 from pypi_org.data.package import Package
+from pypi_org.data.releases import Release
 
 def main():
     init_db()
@@ -14,6 +15,20 @@ def insert_a_package():
     p.summary = input("Package summary: ").strip()
     p.author = input("Author: ").strip()
     p.license = input("License: ").strip()
+
+    print("Release 1")
+    r = Release()
+    r.major_ver = int(input("Major version: "))
+    r.minor_ver = int(input("Minor version: "))
+    r.build_ver = int(input("Build version: "))
+    r.size = int(input("Size in bytes: "))
+
+    print("Release 2")
+    r = Release()
+    r.major_ver = int(input("Major version: "))
+    r.minor_ver = int(input("Minor version: "))
+    r.build_ver = int(input("Build version: "))
+    r.size = int(input("Size in bytes: "))
 
     import sqlalchemy.orm
     session: sqlalchemy.orm.Session = db_session.factory()

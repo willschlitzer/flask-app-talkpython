@@ -13,7 +13,7 @@ def index():
                                  packages=test_packages,
                                  package_count=package_service.get_package_count(),
                                  release_count=package_service.get_release_count(),
-                                 user_count=3)
+                                 user_count=user_service.get_user_count())
 
 #user_service.get_user_count()
 

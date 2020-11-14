@@ -8,16 +8,16 @@ from pypi_org.data.releases import Release
 def get_latest_releases(limit = 10) -> List[Release]:
     session = db_session.create_session()
 
-    releases = session.query(Release).order_by(Release.created_date.desc()).limit(limit).all()
+    releases = session.query(Release).options(sqlalchemy.orm.joinedload(Release.package)).order_by(Release.created_date.desc()).limit(limit).all()
+
+    session.close()
 
     return releases
 
 def get_package_count() -> int:
-    return 200
     session = db_session.create_session()
     return session.query(Package).count()
 
 def get_release_count() -> int:
-    return 200
     session = db_session.create_session()
     return session.query(Release).count()
